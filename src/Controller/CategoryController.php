@@ -13,6 +13,9 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Form\Type\CategoryType;
 use Symfony\Contracts\Translation\TranslatorInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
+use Symfony\Component\Security\Core\Security;
+
 /**
  * Class CategoryController.
  */
@@ -26,21 +29,25 @@ class CategoryController extends AbstractController
 
     /**
      * Translator.
-     *
-     * @var TranslatorInterface
      */
     private TranslatorInterface $translator;
+    /**
+     * Security helper.
+     */
+    private Security $security;
 
     /**
      * Constructor.
      *
-     * @param CategoryServiceInterface $taskService Task service
-     * @param TranslatorInterface      $translator  Translator
+     * @param CategoryServiceInterface $categoryService CategoryService
+     * @param TranslatorInterface      $translator      Translator
+     * @param Security                 $security        Security
      */
-    public function __construct(CategoryServiceInterface $categoryService, TranslatorInterface $translator)
+    public function __construct(CategoryServiceInterface $categoryService, TranslatorInterface $translator, Security $security)
     {
         $this->categoryService = $categoryService;
         $this->translator = $translator;
+        $this->security = $security;
     }
 
     /**
@@ -66,7 +73,7 @@ class CategoryController extends AbstractController
 
             $this->addFlash(
                 'success',
-                $this->translator->trans('Category created successfully!')
+                $this->translator->trans('message.created_successfully')
             );
 
             return $this->redirectToRoute('category_index');
@@ -87,6 +94,7 @@ class CategoryController extends AbstractController
      * @return Response HTTP response
      */
     #[Route('/{id}/edit', name: 'category_edit', requirements: ['id' => '[1-9]\d*'], methods: 'GET|PUT')]
+    #[IsGranted('EDIT', subject: 'category')]
     public function edit(Request $request, Category $category): Response
     {
         $form = $this->createForm(
@@ -103,7 +111,7 @@ class CategoryController extends AbstractController
 
             $this->addFlash(
                 'success',
-                $this->translator->trans('message.created_successfully')
+                $this->translator->trans('message.edited_successfully')
             );
 
             return $this->redirectToRoute('category_index');
@@ -111,6 +119,57 @@ class CategoryController extends AbstractController
 
         return $this->render(
             'category/edit.html.twig',
+            [
+                'form' => $form->createView(),
+                'category' => $category,
+            ]
+        );
+    }
+
+    /**
+     * Delete action.
+     *
+     * @param Request  $request  HTTP request
+     * @param Category $category Category entity
+     *
+     * @return Response HTTP response
+     */
+    #[Route('/{id}/delete', name: 'category_delete', requirements: ['id' => '[1-9]\d*'], methods: 'GET|DELETE')]
+    #[IsGranted('DELETE', subject: 'category')]
+    public function delete(Request $request, Category $category): Response
+    {
+        if (!$this->categoryService->canBeDeleted($category)) {
+            $this->addFlash(
+                'warning',
+                $this->translator->trans('message.already_assigned')
+            );
+
+            return $this->redirectToRoute('category_index');
+        }
+
+        $form = $this->createForm(
+            CategoryType::class,
+            $category,
+            [
+                'method' => 'DELETE',
+                'action' => $this->generateUrl('category_delete', ['id' => $category->getId()]),
+            ]
+        );
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $this->categoryService->delete($category);
+
+            $this->addFlash(
+                'success',
+                $this->translator->trans('message.deleted_successfully')
+            );
+
+            return $this->redirectToRoute('category_index');
+        }
+
+        return $this->render(
+            'category/delete.html.twig',
             [
                 'form' => $form->createView(),
                 'category' => $category,

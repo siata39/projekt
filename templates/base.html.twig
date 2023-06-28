@@ -12,15 +12,42 @@
     {% endblock %}
 </head>
 <body>
+{% if is_granted('IS_AUTHENTICATED_FULLY') %}
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <a class="navbar-brand" href="{{ url('task_index') }}" title="{{ 'action.logo'|trans }}">
+        {{ 'action.logo'|trans }}
+    </a>
+    <a href="{{ url('task_index') }}" title="{{ 'action.task_list'|trans }}" class="nav-link">
+        {{ 'action.task_list'|trans }}
+    </a>
+    <a href="{{ url('note_index') }}" title="{{ 'action.note_list'|trans }}" class="nav-link">
+        {{ 'action.note_list'|trans }}
+    </a>
+    <a href="{{ url('category_index') }}" title="{{ 'action.category_list'|trans }}" class="nav-link">
+        {{ 'action.category_list'|trans }}
+    </a>
+    <a href="{{ url('tag_index') }}" title="{{ 'action.tag_list'|trans }}" class="nav-link">
+        {{ 'action.tag_list'|trans }}
+    </a>
+    {% if is_granted('ROLE_ADMIN') %}
+        <a href="{{ url('user_index') }}" title="{{ 'action.user_list'|trans }}" class="nav-link">
+            {{ 'action.user_list'|trans }}
+        </a>
+    {% endif %}
+    <a href="{{ url('app_account') }}" title="{{ 'action.account'|trans }}" class="nav-link">
+        {{ app.user.name }}
+    </a>
+    <a href="{{ url('app_logout') }}">
+        {{ 'action.logout'|trans }}
+    </a>
+    {% endif %}
+</nav>
 <main role="main" class="container-fluid">
-    {% for type, messages in app.session.flashBag.all %}
-        {% for message in messages %}
-            <div class="alert alert-{{ type }}" role="alert">
-                {{ message }}
-            </div>
-        {% endfor %}
-    {% endfor %}
-    {% block body %}{% endblock %}
+    <div class="container-fluid">
+        {% include 'default/_flash_messages.html.twig' %}
+        {% block body %}
+        {% endblock %}
+    </div>
 </main>
 {% block javascripts %}
     <script

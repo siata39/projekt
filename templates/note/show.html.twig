@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ 'title.note_details'|trans({'%id%': note.id|default('')}) }}
+{% endblock %}
+
+{% block body %}
+    <h1>{{ 'title.note_details'|trans({'%id%': note.id|default('')}) }}</h1>
+    {% if note is defined and note|length %}
+        <dl class="dl-horizontal">
+            <dt>{{ 'label.id'|trans }}</dt>
+            <dd>{{ note.id }}</dd>
+            <dt>{{ 'label.created_at'|trans }}</dt>
+            <dd>{{ note.createdAt|format_date('long') }}</dd>
+            <dt>{{ 'label.updated_at'|trans }}</dt>
+            <dd>{{ note.updatedAt|format_date('long') }}</dd>
+            <dt>{{ 'label.title'|trans }}</dt>
+            <dd>{{  note.title }}</dd>
+            <dt>{{ 'label_author'|trans }}</dt>
+            <dd>{{  note.author.name }}</dd>
+            <dt>{{ 'label.category'|trans }}</dt>
+            <dd>{{  note.category.title }}</dd>
+            <dt>{{ 'label.content'|trans }}</dt>
+            <dd>{{ note.content|markdown_to_html }}</dd>
+        </dl>
+        <p>
+            <a href="{{ url('note_index') }}" title="{{ 'action.back_to_list'|trans }}">
+                {{ 'action.back_to_list'|trans }}
+            </a>
+        </p>
+    {% else %}
+        <p>
+            {{ 'message.record_not_found'|trans }}
+        </p>
+    {% endif %}
+{% endblock %}

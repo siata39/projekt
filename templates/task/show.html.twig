@@ -16,6 +16,8 @@
             <dd>{{ task.updatedAt|date('Y/m/d') }}</dd>
             <dt>{{ 'label.title'|trans }}</dt>
             <dd>{{  task.title }}</dd>
+            <dt>{{ 'label_author'|trans }}</dt>
+            <dd>{{  task.author.name }}</dd>
         </dl>
         <p>
             <a href="{{ url('task_index') }}" title="{{ 'action.back_to_list'|trans }}">

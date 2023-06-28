@@ -26,3 +26,5 @@ services:
         autowire: true
     App\Entity\Category:
         autowire: true
+    App\Entity\Note:
+        autowire: true
