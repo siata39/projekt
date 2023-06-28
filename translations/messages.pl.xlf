@@ -8,47 +8,47 @@
       </trans-unit>
       <trans-unit id="label.title">
         <source>label.title</source>
-        <target>Title</target>
+        <target>Tytuł</target>
       </trans-unit>
       <trans-unit id="label.created_at">
         <source>label.created_at</source>
-        <target>Posted</target>
+        <target>Opublikowano</target>
       </trans-unit>
       <trans-unit id="label.updated_at">
         <source>label.updated_at</source>
-        <target>Last Updated</target>
+        <target>Zaktualizowano</target>
       </trans-unit>
       <trans-unit id="label_category">
         <source>label_category</source>
-        <target>Category</target>
+        <target>Kategoria</target>
       </trans-unit>
       <trans-unit id="label.actions">
         <source>label.actions</source>
-        <target>Edit</target>
+        <target>Edycja</target>
       </trans-unit>
       <trans-unit id="message.empty_list">
         <source>message.empty_list</source>
-        <target>List is empty.</target>
+        <target>Lista jest pusta.</target>
       </trans-unit>
       <trans-unit id="message.record_not_found">
         <source>message.record_not_found</source>
-        <target>Record not found.</target>
+        <target>Nie znaleziono rekordu.</target>
       </trans-unit>
       <trans-unit id="title.task_list">
         <source>title.task_list</source>
-        <target>Task list</target>
+        <target>Lista Zadań</target>
       </trans-unit>
       <trans-unit id="title.task_details">
         <source>title.task_details</source>
-        <target>View Task #%id%</target>
+        <target>Zobacz Zadanie #%id%</target>
       </trans-unit>
       <trans-unit id="action.show">
         <source>action.show</source>
-        <target>Show</target>
+        <target>Czytaj</target>
       </trans-unit>
       <trans-unit id="action.back_to_list">
         <source>action.back_to_list</source>
-        <target>Go Back</target>
+        <target>Powrót</target>
       </trans-unit>
       <trans-unit id="action.logo">
         <source>action.logo</source>
@@ -56,151 +56,151 @@
       </trans-unit>
       <trans-unit id="action.task_list">
         <source>action.task_list</source>
-        <target>Tasks</target>
+        <target>Zadania</target>
       </trans-unit>
       <trans-unit id="action.note_list">
         <source>action.note_list</source>
-        <target>Notes</target>
+        <target>Notatki</target>
       </trans-unit>
       <trans-unit id="action.category_list">
         <source>action.category_list</source>
-        <target>Categories</target>
+        <target>Kategorie</target>
       </trans-unit>
       <trans-unit id="action.tag_list">
         <source>action.tag_list</source>
-        <target>Tags</target>
+        <target>Tagi</target>
       </trans-unit>
       <trans-unit id="action.user_list">
         <source>action.user_list</source>
-        <target>Users</target>
+        <target>Użytkownicy</target>
       </trans-unit>
       <trans-unit id="action.account">
         <source>action.account</source>
-        <target>Account</target>
+        <target>Konto</target>
       </trans-unit>
       <trans-unit id="action.logout">
         <source>action.logout</source>
-        <target>Logout</target>
+        <target>Wyloguj</target>
       </trans-unit>
       <trans-unit id="title.category_create">
         <source>title.category_create</source>
-        <target>New Category</target>
+        <target>Nowa Kategoria</target>
       </trans-unit>
       <trans-unit id="title.category_delete">
         <source>title.category_delete</source>
-        <target>Delete</target>
+        <target>Usuń Kategorie</target>
       </trans-unit>
       <trans-unit id="action.create">
         <source>action.create</source>
-        <target>Create</target>
+        <target>Stwórz</target>
       </trans-unit>
       <trans-unit id="action.edit">
         <source>action.edit</source>
-        <target>Edit</target>
+        <target>Edytuj</target>
       </trans-unit>
       <trans-unit id="action.delete">
         <source>action.delete</source>
-        <target>Delete</target>
+        <target>Usuń</target>
       </trans-unit>
       <trans-unit id="label_tags">
         <source>label_tags</source>
-        <target>Tags</target>
+        <target>Tagi</target>
       </trans-unit>
       <trans-unit id="label_author">
         <source>label_author</source>
-        <target>Author</target>
+        <target>Autor</target>
       </trans-unit>
       <trans-unit id="title.task_edit">
         <source>title.task_edit</source>
-        <target>Edit Task</target>
+        <target>Edytuj Zadanie</target>
       </trans-unit>
       <trans-unit id="label.category">
         <source>label.category</source>
-        <target>Category</target>
+        <target>Kategoria</target>
       </trans-unit>
       <trans-unit id="label.tags">
         <source>label.tags</source>
-        <target>Tags</target>
+        <target>Tagi</target>
       </trans-unit>
       <trans-unit id="title.task_delete">
         <source>title.task_delete</source>
-        <target>Delete Task</target>
+        <target>Usuń Zadanie</target>
       </trans-unit>
       <trans-unit id="title.note_list">
         <source>title.note_list</source>
-        <target>Note List</target>
+        <target>Lista Notatek</target>
       </trans-unit>
       <trans-unit id="title.note_details">
         <source>title.note_details</source>
-        <target>View Note #%id%</target>
+        <target>Zobacz Notatkę #%id%</target>
       </trans-unit>
       <trans-unit id="label.content">
         <source>label.content</source>
-        <target>Content</target>
+        <target>Treść</target>
       </trans-unit>
       <trans-unit id="title.note_edit">
         <source>title.note_edit</source>
-        <target>Edit Note</target>
+        <target>Edytuj Zadanie</target>
       </trans-unit>
       <trans-unit id="title.note_delete">
         <source>title.note_delete</source>
-        <target>Delete Note</target>
+        <target>Usuń Zadanie</target>
       </trans-unit>
       <trans-unit id="title.note_create">
         <source>title.note_create</source>
-        <target>New Note</target>
+        <target>Nowa Notatka</target>
       </trans-unit>
       <trans-unit id="title.task_create">
         <source>title.task_create</source>
-        <target>New Task</target>
+        <target>Nowe Zadanie</target>
       </trans-unit>
       <trans-unit id="title.category_edit">
         <source>title.category_edit</source>
-        <target>Edit Category</target>
+        <target>Edytuj Kategorię</target>
       </trans-unit>
       <trans-unit id="title.category_list">
         <source>title.category_list</source>
-        <target>Category List</target>
+        <target>Lista Kategori</target>
       </trans-unit>
       <trans-unit id="title.category_details">
         <source>title.category_details</source>
-        <target>View Category #%id%</target>
+        <target>Zobacz Kategorię #%id%</target>
       </trans-unit>
       <trans-unit id="title.tag_create">
         <source>title.tag_create</source>
-        <target>New Tag</target>
+        <target>Nowy Tag</target>
       </trans-unit>
       <trans-unit id="title.tag_delete">
         <source>title.tag_delete</source>
-        <target>Delete Tag</target>
+        <target>Usuń Tag</target>
       </trans-unit>
       <trans-unit id="title.tag_edit">
         <source>title.tag_edit</source>
-        <target>Edit Tag</target>
+        <target>Edytuj Tag</target>
       </trans-unit>
       <trans-unit id="title.tag_list">
         <source>title.tag_list</source>
-        <target>Tag List</target>
+        <target>Lista Tagów</target>
       </trans-unit>
       <trans-unit id="title.tag_details">
         <source>title.tag_details</source>
-        <target>View Tag #%id%</target>
+        <target>Zobacz Tag #%id%</target>
       </trans-unit>
       <trans-unit id="title.user_create">
         <source>title.user_create</source>
-        <target>New User</target>
+        <target>Nowy Użytkownik</target>
       </trans-unit>
       <trans-unit id="title.user_delete">
         <source>title.user_delete</source>
-        <target>Delete User</target>
+        <target>Usuń Użytkownika</target>
       </trans-unit>
       <trans-unit id="title.user_edit">
         <source>title.user_edit</source>
-        <target>Edit User</target>
+        <target>Edytuj Użytkownika</target>
       </trans-unit>
       <trans-unit id="title.user_details">
         <source>title.user_details</source>
-        <target>View User #%id%</target>
+        <target>Zobacz Użytkownika #%id%</target>
       </trans-unit>
       <trans-unit id="label.email">
         <source>label.email</source>
@@ -208,23 +208,23 @@
       </trans-unit>
       <trans-unit id="label.name">
         <source>label.name</source>
-        <target>Name</target>
+        <target>Imię</target>
       </trans-unit>
       <trans-unit id="label.roles">
         <source>label.roles</source>
-        <target>Role</target>
+        <target>Rola</target>
       </trans-unit>
       <trans-unit id="label.password">
         <source>label.password</source>
-        <target>Password</target>
+        <target>Hasło</target>
       </trans-unit>
       <trans-unit id="title.user_list">
         <source>title.user_list</source>
-        <target>User List</target>
+        <target>Lista Użytkowników</target>
       </trans-unit>
       <trans-unit id="title.login">
         <source>title.login</source>
-        <target>Please Sign in</target>
+        <target>Logowanie</target>
       </trans-unit>
       <trans-unit id="login.email">
         <source>login.email</source>
@@ -232,59 +232,59 @@
       </trans-unit>
       <trans-unit id="login.password">
         <source>login.password</source>
-        <target>Password</target>
+        <target>Hasło</target>
       </trans-unit>
       <trans-unit id="action.signin">
         <source>action.signin</source>
-        <target>Sign in</target>
+        <target>Zaloguj się</target>
       </trans-unit>
       <trans-unit id="login.signup">
         <source>login.signup</source>
-        <target>Don't have an account? Register</target>
+        <target>Nie masz jeszcze konta? Zarejestruj się</target>
       </trans-unit>
       <trans-unit id="title.register">
         <source>title.register</source>
-        <target>Create Your Account</target>
+        <target>Stwórz Konto</target>
       </trans-unit>
       <trans-unit id="action.signup">
         <source>action.signup</source>
-        <target>Sign Up</target>
+        <target>Zarejestruj się</target>
       </trans-unit>
       <trans-unit id="action.save">
         <source>action.save</source>
-        <target>Save</target>
+        <target>Zapisz</target>
       </trans-unit>
       <trans-unit id="title.account">
         <source>title.account</source>
-        <target>Your Account</target>
+        <target>Twoje Konto</target>
       </trans-unit>
       <trans-unit id="action.account_change">
         <source>action.account_change</source>
-        <target>Change</target>
+        <target>Zmień</target>
       </trans-unit>
       <trans-unit id="message.created_successfully">
         <source>message.created_successfully</source>
-        <target>Created Successfully!</target>
+        <target>Udało się stworzyć!</target>
       </trans-unit>
       <trans-unit id="message.edited_successfully">
         <source>message.edited_successfully</source>
-        <target>Edited Successfully!</target>
+        <target>Udało się zedytować!</target>
       </trans-unit>
       <trans-unit id="message.deleted_successfully">
         <source>message.deleted_successfully</source>
-        <target>Deleted Successfully!</target>
+        <target>Udało się usunąć!</target>
       </trans-unit>
       <trans-unit id="message.already_assigned">
         <source>message.already_assigned</source>
-        <target>Already Assigned!</target>
+        <target>Nie udało się! Jest przypisany.</target>
       </trans-unit>
       <trans-unit id="message.registered_successfully">
         <source>message.registered_successfully</source>
-        <target>Registered Successfully!</target>
+        <target>Pomyślnie Zarejestrowano!</target>
       </trans-unit>
       <trans-unit id="message.form_error">
         <source>message.form_error</source>
-        <target>Oops Something Went Wrong!</target>
+        <target>Oops, coś poszło nie tak!</target>
       </trans-unit>
       <trans-unit id="user.id">
         <source>user.id</source>
@@ -296,15 +296,15 @@
       </trans-unit>
       <trans-unit id="user.name">
         <source>user.name</source>
-        <target>Name</target>
+        <target>Imię</target>
       </trans-unit>
       <trans-unit id="user.roles">
         <source>user.roles</source>
-        <target>Roles</target>
+        <target>Role</target>
       </trans-unit>
       <trans-unit id="user.password">
         <source>user.password</source>
-        <target>Password</target>
+        <target>Hasło</target>
       </trans-unit>
       <trans-unit id="label.none">
         <source>label.none</source>
