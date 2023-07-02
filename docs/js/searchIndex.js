@@ -108,7 +108,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\App\\Controller\\SecurityController",
             "name": "SecurityController",
-            "summary": "",
+            "summary": "Class\u0020SecurityController.",
             "url": "classes/App-Controller-SecurityController.html"
         },                {
             "fqsen": "\\App\\Controller\\SecurityController\u003A\u003A__construct\u0028\u0029",
@@ -133,12 +133,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\App\\Controller\\SecurityController\u003A\u003AchangeAccountData\u0028\u0029",
             "name": "changeAccountData",
-            "summary": "Change\u0020Account.",
+            "summary": "Change\u0020Account\u0020Password.",
             "url": "classes/App-Controller-SecurityController.html#method_changeAccountData"
+        },                {
+            "fqsen": "\\App\\Controller\\SecurityController\u003A\u003AchangeAccountName\u0028\u0029",
+            "name": "changeAccountName",
+            "summary": "Change\u0020Account\u0020Name.",
+            "url": "classes/App-Controller-SecurityController.html#method_changeAccountName"
         },                {
             "fqsen": "\\App\\Controller\\SecurityController\u003A\u003A\u0024managerRegistry",
             "name": "managerRegistry",
-            "summary": "",
+            "summary": "Registry\u0020manager.",
             "url": "classes/App-Controller-SecurityController.html#property_managerRegistry"
         },                {
             "fqsen": "\\App\\Controller\\SecurityController\u003A\u003A\u0024translator",
@@ -286,6 +291,11 @@ Search.appendIndex(
             "summary": "Delete\u0020action.",
             "url": "classes/App-Controller-UserController.html#method_delete"
         },                {
+            "fqsen": "\\App\\Controller\\UserController\u003A\u003AeditPassword\u0028\u0029",
+            "name": "editPassword",
+            "summary": "Edit\u0020password\u0020action.",
+            "url": "classes/App-Controller-UserController.html#method_editPassword"
+        },                {
             "fqsen": "\\App\\Controller\\UserController\u003A\u003A\u0024userService",
             "name": "userService",
             "summary": "User\u0020service.",
@@ -298,7 +308,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\App\\Controller\\UserController\u003A\u003A\u0024passwordHasher",
             "name": "passwordHasher",
-            "summary": "",
+            "summary": "Interface\u0020for\u0020a\u0020user\u0020password\u0020hasher.",
             "url": "classes/App-Controller-UserController.html#property_passwordHasher"
         },                {
             "fqsen": "\\App\\Controller\\UserController\u003A\u003A\u0024security",
@@ -653,7 +663,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\App\\Entity\\Tag",
             "name": "Tag",
-            "summary": "",
+            "summary": "Class\u0020Tag.",
             "url": "classes/App-Entity-Tag.html"
         },                {
             "fqsen": "\\App\\Entity\\Tag\u003A\u003AgetId\u0028\u0029",
@@ -993,7 +1003,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\App\\Form\\Type\\AccountType\u003A\u003A\u0024passwordHasher",
             "name": "passwordHasher",
-            "summary": "",
+            "summary": "Interface\u0020for\u0020a\u0020user\u0020password\u0020hasher.",
             "url": "classes/App-Form-Type-AccountType.html#property_passwordHasher"
         },                {
             "fqsen": "\\App\\Form\\Type\\CategoryType",
@@ -1123,12 +1133,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\App\\Form\\Type\\UserType\u003A\u003A\u0024authorizationChecker",
             "name": "authorizationChecker",
-            "summary": "",
+            "summary": "Authorization\u0020Checker.",
             "url": "classes/App-Form-Type-UserType.html#property_authorizationChecker"
         },                {
             "fqsen": "\\App\\Kernel",
             "name": "Kernel",
-            "summary": "",
+            "summary": "Class\u0020Kernel.",
             "url": "classes/App-Kernel.html"
         },                {
             "fqsen": "\\App\\Repository\\CategoryRepository",
@@ -1181,11 +1191,6 @@ Search.appendIndex(
             "summary": "Query\u0020all\u0020records.",
             "url": "classes/App-Repository-NoteRepository.html#method_queryAll"
         },                {
-            "fqsen": "\\App\\Repository\\NoteRepository\u003A\u003AapplyFiltersToList\u0028\u0029",
-            "name": "applyFiltersToList",
-            "summary": "Apply\u0020filters\u0020to\u0020paginated\u0020list.",
-            "url": "classes/App-Repository-NoteRepository.html#method_applyFiltersToList"
-        },                {
             "fqsen": "\\App\\Repository\\NoteRepository\u003A\u003AcountByCategory\u0028\u0029",
             "name": "countByCategory",
             "summary": "Count\u0020notes\u0020by\u0020category.",
@@ -1201,15 +1206,20 @@ Search.appendIndex(
             "summary": "Delete\u0020entity.",
             "url": "classes/App-Repository-NoteRepository.html#method_delete"
         },                {
-            "fqsen": "\\App\\Repository\\NoteRepository\u003A\u003AgetOrCreateQueryBuilder\u0028\u0029",
-            "name": "getOrCreateQueryBuilder",
-            "summary": "Get\u0020or\u0020create\u0020new\u0020query\u0020builder.",
-            "url": "classes/App-Repository-NoteRepository.html#method_getOrCreateQueryBuilder"
-        },                {
             "fqsen": "\\App\\Repository\\NoteRepository\u003A\u003AqueryByAuthor\u0028\u0029",
             "name": "queryByAuthor",
             "summary": "Query\u0020notes\u0020by\u0020author.",
             "url": "classes/App-Repository-NoteRepository.html#method_queryByAuthor"
+        },                {
+            "fqsen": "\\App\\Repository\\NoteRepository\u003A\u003AapplyFiltersToList\u0028\u0029",
+            "name": "applyFiltersToList",
+            "summary": "Apply\u0020filters\u0020to\u0020paginated\u0020list.",
+            "url": "classes/App-Repository-NoteRepository.html#method_applyFiltersToList"
+        },                {
+            "fqsen": "\\App\\Repository\\NoteRepository\u003A\u003AgetOrCreateQueryBuilder\u0028\u0029",
+            "name": "getOrCreateQueryBuilder",
+            "summary": "Get\u0020or\u0020create\u0020new\u0020query\u0020builder.",
+            "url": "classes/App-Repository-NoteRepository.html#method_getOrCreateQueryBuilder"
         },                {
             "fqsen": "\\App\\Repository\\NoteRepository\u003A\u003APAGINATOR_ITEMS_PER_PAGE",
             "name": "PAGINATOR_ITEMS_PER_PAGE",
@@ -1266,11 +1276,6 @@ Search.appendIndex(
             "summary": "Query\u0020all\u0020records.",
             "url": "classes/App-Repository-TaskRepository.html#method_queryAll"
         },                {
-            "fqsen": "\\App\\Repository\\TaskRepository\u003A\u003AapplyFiltersToList\u0028\u0029",
-            "name": "applyFiltersToList",
-            "summary": "Apply\u0020filters\u0020to\u0020paginated\u0020list.",
-            "url": "classes/App-Repository-TaskRepository.html#method_applyFiltersToList"
-        },                {
             "fqsen": "\\App\\Repository\\TaskRepository\u003A\u003AcountByCategory\u0028\u0029",
             "name": "countByCategory",
             "summary": "Count\u0020tasks\u0020by\u0020category.",
@@ -1291,15 +1296,20 @@ Search.appendIndex(
             "summary": "Delete\u0020entity.",
             "url": "classes/App-Repository-TaskRepository.html#method_delete"
         },                {
+            "fqsen": "\\App\\Repository\\TaskRepository\u003A\u003AqueryByAuthor\u0028\u0029",
+            "name": "queryByAuthor",
+            "summary": "Query\u0020tasks\u0020by\u0020author.",
+            "url": "classes/App-Repository-TaskRepository.html#method_queryByAuthor"
+        },                {
             "fqsen": "\\App\\Repository\\TaskRepository\u003A\u003AgetOrCreateQueryBuilder\u0028\u0029",
             "name": "getOrCreateQueryBuilder",
             "summary": "Get\u0020or\u0020create\u0020new\u0020query\u0020builder.",
             "url": "classes/App-Repository-TaskRepository.html#method_getOrCreateQueryBuilder"
         },                {
-            "fqsen": "\\App\\Repository\\TaskRepository\u003A\u003AqueryByAuthor\u0028\u0029",
-            "name": "queryByAuthor",
-            "summary": "Query\u0020tasks\u0020by\u0020author.",
-            "url": "classes/App-Repository-TaskRepository.html#method_queryByAuthor"
+            "fqsen": "\\App\\Repository\\TaskRepository\u003A\u003AapplyFiltersToList\u0028\u0029",
+            "name": "applyFiltersToList",
+            "summary": "Apply\u0020filters\u0020to\u0020paginated\u0020list.",
+            "url": "classes/App-Repository-TaskRepository.html#method_applyFiltersToList"
         },                {
             "fqsen": "\\App\\Repository\\TaskRepository\u003A\u003APAGINATOR_ITEMS_PER_PAGE",
             "name": "PAGINATOR_ITEMS_PER_PAGE",
@@ -1323,7 +1333,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\App\\Repository\\UserRepository\u003A\u003Adelete\u0028\u0029",
             "name": "delete",
-            "summary": "Delete\u0020etity.",
+            "summary": "Delete\u0020entity.",
             "url": "classes/App-Repository-UserRepository.html#method_delete"
         },                {
             "fqsen": "\\App\\Repository\\UserRepository\u003A\u003AupgradePassword\u0028\u0029",
@@ -1718,7 +1728,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\App\\Service\\CategoryServiceInterface",
             "name": "CategoryServiceInterface",
-            "summary": "",
+            "summary": "Interface\u0020CategoryServiceInterface.",
             "url": "classes/App-Service-CategoryServiceInterface.html"
         },                {
             "fqsen": "\\App\\Service\\CategoryServiceInterface\u003A\u003Asave\u0028\u0029",
@@ -1793,7 +1803,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\App\\Service\\NoteService\u003A\u003A\u0024authorizationChecker",
             "name": "authorizationChecker",
-            "summary": "",
+            "summary": "Interface\u0020for\u0020authorization\u0020checker.",
             "url": "classes/App-Service-NoteService.html#property_authorizationChecker"
         },                {
             "fqsen": "\\App\\Service\\NoteServiceInterface",
@@ -1873,7 +1883,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\App\\Service\\TagServiceInterface",
             "name": "TagServiceInterface",
-            "summary": "",
+            "summary": "Interface\u0020TagServiceInterface.",
             "url": "classes/App-Service-TagServiceInterface.html"
         },                {
             "fqsen": "\\App\\Service\\TagServiceInterface\u003A\u003Asave\u0028\u0029",
@@ -1953,7 +1963,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\App\\Service\\TaskService\u003A\u003A\u0024authorizationChecker",
             "name": "authorizationChecker",
-            "summary": "",
+            "summary": "Interface\u0020for\u0020authorization\u0020checker.",
             "url": "classes/App-Service-TaskService.html#property_authorizationChecker"
         },                {
             "fqsen": "\\App\\Service\\TaskServiceInterface",
@@ -2040,6 +2050,61 @@ Search.appendIndex(
             "name": "findOneByTitle",
             "summary": "Find\u0020by\u0020title.",
             "url": "classes/App-Service-UserServiceInterface.html#method_findOneByTitle"
+        },                {
+            "fqsen": "\\App\\Form\\Type\\AccountNameType",
+            "name": "AccountNameType",
+            "summary": "Class\u0020AccountNameType.",
+            "url": "classes/App-Form-Type-AccountNameType.html"
+        },                {
+            "fqsen": "\\App\\Form\\Type\\AccountNameType\u003A\u003AbuildForm\u0028\u0029",
+            "name": "buildForm",
+            "summary": "Builds\u0020the\u0020form.",
+            "url": "classes/App-Form-Type-AccountNameType.html#method_buildForm"
+        },                {
+            "fqsen": "\\App\\Form\\Type\\AccountNameType\u003A\u003AconfigureOptions\u0028\u0029",
+            "name": "configureOptions",
+            "summary": "Configures\u0020the\u0020options\u0020for\u0020this\u0020type.",
+            "url": "classes/App-Form-Type-AccountNameType.html#method_configureOptions"
+        },                {
+            "fqsen": "\\App\\Form\\Type\\AccountNameType\u003A\u003AgetBlockPrefix\u0028\u0029",
+            "name": "getBlockPrefix",
+            "summary": "Returns\u0020the\u0020prefix\u0020of\u0020the\u0020template\u0020block\u0020name\u0020for\u0020this\u0020type.",
+            "url": "classes/App-Form-Type-AccountNameType.html#method_getBlockPrefix"
+        },                {
+            "fqsen": "\\App\\Form\\Type\\UserPasswordType",
+            "name": "UserPasswordType",
+            "summary": "Class\u0020UserPasswordType.",
+            "url": "classes/App-Form-Type-UserPasswordType.html"
+        },                {
+            "fqsen": "\\App\\Form\\Type\\UserPasswordType\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor.",
+            "url": "classes/App-Form-Type-UserPasswordType.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Form\\Type\\UserPasswordType\u003A\u003AbuildForm\u0028\u0029",
+            "name": "buildForm",
+            "summary": "Builds\u0020the\u0020form.",
+            "url": "classes/App-Form-Type-UserPasswordType.html#method_buildForm"
+        },                {
+            "fqsen": "\\App\\Form\\Type\\UserPasswordType\u003A\u003AconfigureOptions\u0028\u0029",
+            "name": "configureOptions",
+            "summary": "Configures\u0020the\u0020options\u0020for\u0020this\u0020type.",
+            "url": "classes/App-Form-Type-UserPasswordType.html#method_configureOptions"
+        },                {
+            "fqsen": "\\App\\Form\\Type\\UserPasswordType\u003A\u003AgetBlockPrefix\u0028\u0029",
+            "name": "getBlockPrefix",
+            "summary": "Returns\u0020the\u0020prefix\u0020of\u0020the\u0020template\u0020block\u0020name\u0020for\u0020this\u0020type.",
+            "url": "classes/App-Form-Type-UserPasswordType.html#method_getBlockPrefix"
+        },                {
+            "fqsen": "\\App\\Form\\Type\\UserPasswordType\u003A\u003A\u0024authorizationChecker",
+            "name": "authorizationChecker",
+            "summary": "Authorization\u0020Checker.",
+            "url": "classes/App-Form-Type-UserPasswordType.html#property_authorizationChecker"
+        },                {
+            "fqsen": "\\App\\Form\\Type\\UserPasswordType\u003A\u003A\u0024passwordHasher",
+            "name": "passwordHasher",
+            "summary": "Interface\u0020for\u0020a\u0020user\u0020password\u0020hasher.",
+            "url": "classes/App-Form-Type-UserPasswordType.html#property_passwordHasher"
         },                {
             "fqsen": "\\",
             "name": "\\",

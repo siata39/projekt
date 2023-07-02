@@ -102,7 +102,7 @@ class UserVoter extends Voter
     /**
      * Checks if user can edit user.
      *
-     * @param User $user User entity.
+     * @param User $user user entity
      *
      * @return bool Result
      */
@@ -116,7 +116,6 @@ class UserVoter extends Voter
      *
      * @param User $user User entity
      *
-     *
      * @return bool Result
      */
     private function canView(User $user): bool
@@ -128,7 +127,6 @@ class UserVoter extends Voter
      * Checks if user can delete user.
      *
      * @param User $user User entity
-     *
      *
      * @return bool Result
      */

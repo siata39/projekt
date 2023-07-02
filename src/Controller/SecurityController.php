@@ -2,11 +2,13 @@
 /**
  * Security controller.
  */
+
 namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\Type\UserType;
 use App\Form\Type\AccountType;
+use App\Form\Type\AccountNameType;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -70,7 +72,6 @@ class SecurityController extends AbstractController
     /**
      * Logout.
      *
-     *
      * @throws \LogicException
      */
     #[Route(path: '/logout', name: 'app_logout')]
@@ -119,7 +120,7 @@ class SecurityController extends AbstractController
     }
 
     /**
-     * Change Account.
+     * Change Account Password.
      *
      * @param Request                     $request        HTTP request
      * @param UserPasswordHasherInterface $passwordHasher PasswordHasher
@@ -142,6 +143,45 @@ class SecurityController extends AbstractController
             $hashedPassword = $passwordHasher->hashPassword($user, $user->getPassword());
             $user->setPassword($hashedPassword);
 
+            // Save the updated user to the database
+            $entityManager = $this->managerRegistry->getManager();
+            $entityManager->persist($user);
+            $entityManager->flush();
+
+            $this->addFlash(
+                'success',
+                $this->translator->trans('message.edited_successfully')
+            );
+
+            // Redirect to the appropriate page after successful update
+            return $this->redirectToRoute('task_index');
+        }
+
+        return $this->render('security/account.html.twig', [
+            'form' => $form->createView(),
+        ]);
+    }
+
+    /**
+     * Change Account Name.
+     *
+     * @param Request                     $request        HTTP request
+     * @param UserPasswordHasherInterface $passwordHasher PasswordHasher
+     * @param Security                    $security       Security
+     *
+     * @return Response HTTP response
+     */
+    #[Route(path: '/accountname', name: 'app_accountname')]
+    public function changeAccountName(Request $request, UserPasswordHasherInterface $passwordHasher, Security $security): Response
+    {
+        // Get the currently logged-in user
+        /** @var PasswordAuthenticatedUserInterface $user */
+        $user = $security->getUser();
+
+        $form = $this->createForm(AccountNameType::class, $user);
+
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
             // Save the updated user to the database
             $entityManager = $this->managerRegistry->getManager();
             $entityManager->persist($user);

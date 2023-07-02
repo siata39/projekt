@@ -8,7 +8,6 @@ namespace App\Form\Type;
 use App\Entity\User;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\FormEvent;
 use Symfony\Component\Form\FormEvents;
@@ -49,15 +48,6 @@ class AccountType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add(
-                'name',
-                TextType::class,
-                [
-                    'label' => 'label.name',
-                    'required' => true,
-                    'attr' => ['max_length' => 180],
-                ]
-            )
             ->add(
                 'password',
                 PasswordType::class,

@@ -2,6 +2,7 @@
 /**
  * Tag entity.
  */
+
 namespace App\Entity;
 
 use App\Repository\TagRepository;

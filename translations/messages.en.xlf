@@ -256,7 +256,7 @@
       </trans-unit>
       <trans-unit id="title.account">
         <source>title.account</source>
-        <target>Your Account</target>
+        <target>Your Password</target>
       </trans-unit>
       <trans-unit id="action.account_change">
         <source>action.account_change</source>
@@ -309,6 +309,22 @@
       <trans-unit id="label.none">
         <source>label.none</source>
         <target> </target>
+      </trans-unit>
+      <trans-unit id="action.change_password">
+        <source>action.change_password</source>
+        <target>Change Password</target>
+      </trans-unit>
+      <trans-unit id="title.account_name">
+        <source>title.account_name</source>
+        <target>Your Name</target>
+      </trans-unit>
+      <trans-unit id="action.password">
+        <source>action.password</source>
+        <target>Password</target>
+      </trans-unit>
+      <trans-unit id="title.user_password">
+        <source>title.user_password</source>
+        <target>Change Password</target>
       </trans-unit>
     </body>
   </file>

@@ -63,7 +63,7 @@ class NoteService implements NoteServiceInterface
      *
      * @param int   $page    Page number
      * @param User  $author  Author
-     * @param array $filters
+     * @param array $filters Filters
      *
      * @return PaginationInterface<string, mixed> Paginated list
      */

@@ -69,7 +69,6 @@ class NoteRepository extends ServiceEntityRepository
         return $this->applyFiltersToList($queryBuilder, $filters);
     }
 
-
     /**
      * Count notes by category.
      *
